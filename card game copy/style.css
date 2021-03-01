@@ -1,0 +1,378 @@
+body {
+    margin: 2px;
+    padding: 0;
+    width: auto;
+    height: auto;
+    /*box-sizing: border-box;*/
+    /*background-image: url("nature.png");*/
+    font-family: "Chau Philomene One";
+    font-size: 12px;
+    border: 6px solid yellowgreen;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    color: #FFCC03;
+    text-emphasis: strong;
+    font-size: 30px;
+    margin-left: 20px;
+    width: auto;
+    height: auto;
+}
+
+#gameBoard {
+    display: flex;
+    flex-flow: row wrap;
+    order: 0;
+    width: 1200px;
+    height: 700px;
+    border: 3px solid red;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    align-items: stretch;
+    align-self: center;
+    flex-grow: 1;
+}
+
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+#startGame {
+    display: flex;
+    border: 4px solid yellow;
+    background-color: white;
+    color: red;
+    width: 300px;
+    height: 60px;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.timer {
+    border: 2px solid blue;
+    width: 200px;
+    height: 30px;
+    background-image: url(timeclock.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px blueviolet;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+box {
+    width: 180px;
+    height: 180px;
+    background-image: url(bola.png);
+    background-size: cover;
+    font-size: 1rem;
+}
+
+
+/*
+
+#bulbasaur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+    /*background-color: green;
+    border: 1px solid yellow;
+    font-size: 1rem;
+}
+
+#bulbasaur2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    border-radius: 0;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#ivysaur {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#ivysaur2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#venusaur {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#venusaur2 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#charmander {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#charmander2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#charmeleon {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#charmeleon2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#charizard {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#charizard2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#squirtle {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#squirtle2 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#wartortle {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#wartortle2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#blastoise {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+#blastoise2 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 160px;
+    height: 160px;
+    background-image: url(bola.png);
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: left;
+    color: #FFCC03;
+    text-emphasis: strong;
+    font-size: 30px;
+    margin-left: 200px;
+    width: auto;
+    height: 200px;
+}
+
+
+/*NOTES ON MEDIA QUERY
+@media (max-width:600px) { 
+    @import "theblog3.css";
+    @import "theblog2.css";
+  
+    @media (max-width:600px) { 
+        @media (min-width:601px) and (max-width:1024px) {
+
+@media (min-width:1025px) {
+    +/
+
+
+/** Styles for the deck of cards
+ 
+
+
+.deck {
+	width: 85%;
+	background: #716F71;
+	padding: 1rem;
+	border-radius: 4px;
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 0 3em;
+}
+
+.deck .card {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #141214;;
+	font-size: 0;
+	color: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+	transform: rotateY(0);
+	background: #02b3e4;
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.deck .card.show {
+	font-size: 33px;
+}
+
+.deck .card.match {
+	cursor: default;
+	background: #E5F720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+}
+
+.deck .card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .75s;
+	background: #e2043b;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+*/
