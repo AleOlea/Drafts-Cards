@@ -46,9 +46,9 @@ const pokeNames = ["bulbasaur", "ivysaur", "venusaur", "charmander", "charmeleon
 const startGame = document.getElementById("startGame");
 startGame.addEventListener("click", function() {
     firstCardIndex = -1;
-    cards.forEach(card => cards); //MY ADD
-    console.log("game on"); //MY ADD
-    //if negative resutl then do  nothing if postive swap the items -0.5 and 0.5 
+    cards.forEach(card => cards);
+    console.log("Game On");
+    //if negative result then do  nothing if postive swap the items -0.5 and 0.5 
     function shuffle(pokeball) {
         pokeball.sort(() => Math.random() - 0.5);
     }
@@ -68,7 +68,7 @@ const cardsDiv = document.getElementsByClassName("memory-cards")[0]; //why index
 let cards = Array.from(cardsDiv.children)
 
 cards.forEach((card, i) => card.addEventListener("click", function(e) {
-    /*console.log(i)*/
+
     const imageUrl = pokeCards.find(item => item.id === pokeNames[i]).image;
     card.style.backgroundImage = `url("${imageUrl}")`
     if (firstCardIndex === -1) {
@@ -76,17 +76,25 @@ cards.forEach((card, i) => card.addEventListener("click", function(e) {
     } else {
         if (pokeNames[firstCardIndex] === pokeNames[i]) {
             score += 1
-            console.log("Score is:", score) // crear box that shows score
+
+            document.getElementById(scores);
+            scores.innerText = (score * 100 + " points!");
+
+            console.log("Score is:", score)
         } else {
             const oldFirstCardIndex = firstCardIndex;
             setTimeout(function() {
-                //__________________________---------------------------___________________________________________________________
-                cards[oldFirstCardIndex].style.backgroundImage = /*`url("bola.png")`*/ `url("ball.png")`;
-                cards[i].style.backgroundImage = `url("ball.png")` /*`url("bola.png")`*/ ;
+
+                cards[oldFirstCardIndex].style.backgroundImage = `url("ball.png")`;
+                cards[i].style.backgroundImage = `url("ball.png")`;
             }, 1500);
         }
         firstCardIndex = -1;
 
     }
+
+
+
+
 
 }));
